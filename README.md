@@ -28,6 +28,5 @@
         $ composer install
         $ sf doctrine:database:create
         $ sf doctrine:schema:update --force
-        $ sf server:start 0.0.0.0:8000
         ```
         
