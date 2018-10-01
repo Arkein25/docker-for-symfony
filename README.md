@@ -1,4 +1,4 @@
-# Docker stack for Symfony 3
+# Docker stack for Symfony 4
 
 ## Installation
 
