@@ -19,14 +19,6 @@
 
 
 4. Prepare the Symfony application
-    1. Update Symfony parameters (*app/config/parameters.yml*)
-
-    2. Composer install & create database
-
-        ```sh
-        $ docker-compose exec php bash
-        $ composer install
-        $ sf doctrine:database:create
-        $ sf doctrine:schema:update --force
-        ```
-        
+```
+    TODO
+```        
