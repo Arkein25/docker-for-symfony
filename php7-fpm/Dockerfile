@@ -44,6 +44,8 @@ COPY conf.d/* /usr/local/etc/php/conf.d/
 
 RUN echo "www-data:www-data" | chpasswd && adduser www-data sudo
 
+RUN usermod -u 1001 www-data
+
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 USER www-data
