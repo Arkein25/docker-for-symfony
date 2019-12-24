@@ -17,8 +17,15 @@ RUN  apt-get update && \
   libxml2-dev \
   libzip-dev \
   libpng-dev \
+  libjpeg-dev \
+  libfreetype6-dev \
   zip \
   && docker-php-ext-configure zip --with-libzip \
+  && docker-php-ext-configure gd \
+          --enable-gd-native-ttf \
+          --with-freetype-dir=/usr/include/freetype2 \
+          --with-png-dir=/usr/include \
+          --with-jpeg-dir=/usr/include \
   && docker-php-ext-install \
     zip \
     gd \
